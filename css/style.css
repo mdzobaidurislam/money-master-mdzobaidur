@@ -1,0 +1,61 @@
+button{
+    cursor: pointer;
+}
+.text_color {
+    color: #000000;
+}
+
+.money_3d_text {
+    font-size: 60px;
+    color: #d9a92e;
+    font-family: Arial Black, Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(211, 163, 40), 1px 1px 0 rgb(205, 157, 34), 2px 2px 0 rgb(198, 150, 27), 3px 3px 0 rgb(192, 144, 21), 4px 4px 0 rgb(186, 138, 15), 5px 5px 0 rgb(180, 132, 9), 6px 6px 0 rgb(173, 125, 2), 7px 7px 0 rgb(167, 119, 0), 8px 8px 0 rgb(161, 113, 0), 9px 9px 8px rgba(224, 154, 13, 0.6), 9px 9px 1px rgba(224, 154, 13, 0.5), 0px 0px 8px rgba(224, 154, 13, .2);
+}
+
+/*  money calculate */
+.money_calculate {
+    padding: 30px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.money_from_control {
+    color: #000000;
+    border-color: #000000;
+}
+
+.money_from_control:focus {
+    color: #000000;
+    background-color: #fccd55;
+    border-color: #000000;
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.money_from_btn {
+    color: #000000;
+    background-color: #fccd55;
+    border-color: #000000;
+    ;
+}
+
+.money_from_btn:hover,
+.money_from_btn:focus {
+    color: #fccd55;
+    background-color: #000000;
+    border-color: #fccd55;
+    box-shadow: none;
+}
+.money_from_btn:disabled {
+    color: #000;
+    background-color: #d7dc8a;
+    border-color: #e2e6b0;
+}
+
+/* responsive  */
+@media (max-width: 575px) {
+    .money_text_center {
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Money Counter Calculator</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12  text-center">
+                <h2 class="money_3d_text">
+                    Money Counter<br> <span class="text_color">Calculator</span> <img
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emojidex/112/money-bag_1f4b0.png"
+                        srcset="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/emojidex/112/money-bag_1f4b0.png 2x"
+                        alt="Money Bag on emojidex 1.0.34" width="160" height="160"> </hh2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="money_img mt-5 text-center">
+                    <img src="img/money1.jfif" class="img-fluid w-75" alt="money">
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="money_calculate">
+                    <!-- start income -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-center">Income</h3>
+                        </div>
+                        <div class="mb-3 col-lg-12">
+                            <div class="row ">
+                                <label for="income"
+                                    class="col-sm-3 col-lg-3 col-form-label text-end money_text_center">Income:</label>
+                                <div class="col-sm-8 col-lg-8 text-left">
+                                    <input type="text" placeholder="Enter income" value=""
+                                        class="money_from_control form-control" id="income">
+                                    <span id="msgIncome" class="form-text text-danger fw-bold"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end income -->
+                    <!-- start Expenses -->
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-center">Expenses</h3>
+                            <div class="mb-3 row">
+                                <label for="food"
+                                    class="col-sm-3 col-lg-3  col-form-label text-end money_text_center">Food:</label>
+                                <div class="col-sm-8 col-lg-8">
+                                    <input type="text" value="" placeholder="Enter food"
+                                        class="money_from_control form-control" id="food">
+                                    <span id="msgFood" class="form-text text-danger fw-bold"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="rent"
+                                    class="col-sm-3 col-lg-3  col-form-label text-end money_text_center">Rent:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" value="" placeholder="Enter rent"
+                                        class="money_from_control form-control" id="rent">
+                                    <span id="msgRent" class="form-text text-danger fw-bold"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="clothes"
+                                    class="col-sm-3 col-lg-3  col-form-label text-end money_text_center">Clothes:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" value="" placeholder="Enter clothes"
+                                        class="money_from_control form-control" id="clothes">
+                                    <span id="msgClothes" class="form-text text-danger fw-bold"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Expenses -->
+                    <!-- satrt calculate button -->
+                    <div class="row justify-content-center ">
+                        <div class="col-sm-2 col-lg-2"></div>
+                        <div class="col-sm-8 col-lg-8 text-start d-grid">
+                            <button class="btn money_from_btn money_from_btn btn-primary "
+                                id="calculateHandle">Calculate</button>
+                            <span id="msgCalculate" class="form-text text-danger fw-bold"></span>
+                        </div>
+                        <div class="col-lg-12 text-center mt-3">
+                            <h4 class="mb-3">Total Expenses: $<span id="total_expenses">0</span></h4>
+                            <h4>Balance: $<span id="total_balance">0</span></h4>
+                        </div>
+                    </div>
+                    <!-- end calculate button -->
+                    <!-- start save money -->
+                    <div class="row mt-2 mb-5 align-items-center">
+                        <div class="col-sm-3 col-lg-3 col-form-label text-end money_text_center">
+                            <h4>Save:</h4>
+                        </div>
+                        <div class="col-sm-4 col-lg-6">
+                            <input type="text" placeholder="Enter save money" class="money_from_control form-control"
+                                id="save_money">
+                        </div>
+                        <div class="col-sm-1 col-lg-1 col-form-label text-end money_text_center">%</div>
+                        <div class="col-sm-4 col-lg-2 d-grid">
+                            <button class="btn money_from_btn money_from_btn btn-primary"
+                                id="saveing_handle">Save</button>
+                        </div>
+
+                        <div class="col-sm-12 text-center mt-3">
+                            <p><span id="msgSaveing" class="form-text text-danger fw-bold"></span></p>
+                            <h4 class="mb-3">Saveing Amount: $<span id="saveing_amount">0</span></h4>
+                            <h4>Remaining: $<span id="remaining_amount">0</span>
+                        </div>
+                    </div>
+                    <!-- end save money -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
